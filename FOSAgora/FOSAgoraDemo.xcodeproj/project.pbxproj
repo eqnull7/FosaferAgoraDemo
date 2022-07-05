@@ -1,0 +1,650 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		181FC987286952BC00DE82F3 /* FOSAgora.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 181FC9852869529900DE82F3 /* FOSAgora.framework */; };
+		181FC988286952BC00DE82F3 /* FOSAgora.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 181FC9852869529900DE82F3 /* FOSAgora.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1825D433283F2176002B3097 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 1825D412283F2176002B3097 /* UINavigationController+FDFullscreenPopGesture.m */; };
+		1825D434283F2176002B3097 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 1825D414283F2176002B3097 /* LICENSE */; };
+		1825D435283F2176002B3097 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1825D417283F2176002B3097 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		1825D436283F2176002B3097 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1825D420283F2176002B3097 /* ViewController+MASAdditions.m */; };
+		1825D437283F2176002B3097 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1825D424283F2176002B3097 /* MASCompositeConstraint.m */; };
+		1825D438283F2176002B3097 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 1825D425283F2176002B3097 /* MASConstraintMaker.m */; };
+		1825D439283F2176002B3097 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1825D426283F2176002B3097 /* MASLayoutConstraint.m */; };
+		1825D43A283F2176002B3097 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1825D427283F2176002B3097 /* NSArray+MASAdditions.m */; };
+		1825D43B283F2176002B3097 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1825D428283F2176002B3097 /* View+MASAdditions.m */; };
+		1825D43C283F2176002B3097 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1825D42B283F2176002B3097 /* MASConstraint.m */; };
+		1825D43D283F2176002B3097 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1825D42D283F2176002B3097 /* MASViewConstraint.m */; };
+		1825D43E283F2176002B3097 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 1825D42E283F2176002B3097 /* MASViewAttribute.m */; };
+		1825D43F283F2176002B3097 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1825D42F283F2176002B3097 /* README.md */; };
+		1825D440283F2176002B3097 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1825D431283F2176002B3097 /* Reachability.m */; };
+		1825D447283F21D4002B3097 /* FOSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1825D444283F21D3002B3097 /* FOSHomeViewController.m */; };
+		1825D448283F21D4002B3097 /* FOSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1825D445283F21D4002B3097 /* FOSBaseViewController.m */; };
+		1825D449283F21D4002B3097 /* FOSDetectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1825D446283F21D4002B3097 /* FOSDetectViewController.m */; };
+		18E8F762282CDCC3007B8887 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E8F761282CDCC3007B8887 /* AppDelegate.m */; };
+		18E8F768282CDCC3007B8887 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E8F767282CDCC3007B8887 /* ViewController.m */; };
+		18E8F76B282CDCC3007B8887 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E8F769282CDCC3007B8887 /* Main.storyboard */; };
+		18E8F76D282CDCC5007B8887 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E8F76C282CDCC5007B8887 /* Assets.xcassets */; };
+		18E8F770282CDCC5007B8887 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E8F76E282CDCC5007B8887 /* LaunchScreen.storyboard */; };
+		18E8F773282CDCC5007B8887 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E8F772282CDCC5007B8887 /* main.m */; };
+		80348EBD1D4BEB9B7328EE6A /* Pods_FOSAgoraDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 522F75AB69CECF7B84C25061 /* Pods_FOSAgoraDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		18E8F789282CDCF5007B8887 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				181FC988286952BC00DE82F3 /* FOSAgora.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		180681432869437B005807F5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1806814528694385005807F5 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		180681472869438F005807F5 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		1806814928694397005807F5 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		181FC9852869529900DE82F3 /* FOSAgora.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FOSAgora.framework; sourceTree = "<group>"; };
+		1825D411283F2176002B3097 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		1825D412283F2176002B3097 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		1825D414283F2176002B3097 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1825D416283F2176002B3097 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		1825D417283F2176002B3097 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		1825D418283F2176002B3097 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		1825D419283F2176002B3097 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		1825D41A283F2176002B3097 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		1825D41B283F2176002B3097 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		1825D41C283F2176002B3097 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		1825D41D283F2176002B3097 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		1825D41E283F2176002B3097 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		1825D41F283F2176002B3097 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		1825D420283F2176002B3097 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		1825D421283F2176002B3097 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		1825D422283F2176002B3097 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		1825D423283F2176002B3097 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		1825D424283F2176002B3097 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		1825D425283F2176002B3097 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		1825D426283F2176002B3097 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		1825D427283F2176002B3097 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		1825D428283F2176002B3097 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		1825D429283F2176002B3097 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		1825D42A283F2176002B3097 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		1825D42B283F2176002B3097 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		1825D42C283F2176002B3097 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		1825D42D283F2176002B3097 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		1825D42E283F2176002B3097 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		1825D42F283F2176002B3097 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1825D431283F2176002B3097 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		1825D432283F2176002B3097 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		1825D441283F21D3002B3097 /* FOSHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FOSHomeViewController.h; sourceTree = "<group>"; };
+		1825D442283F21D3002B3097 /* FOSBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FOSBaseViewController.h; sourceTree = "<group>"; };
+		1825D443283F21D3002B3097 /* FOSDetectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FOSDetectViewController.h; sourceTree = "<group>"; };
+		1825D444283F21D3002B3097 /* FOSHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOSHomeViewController.m; sourceTree = "<group>"; };
+		1825D445283F21D4002B3097 /* FOSBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOSBaseViewController.m; sourceTree = "<group>"; };
+		1825D446283F21D4002B3097 /* FOSDetectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOSDetectViewController.m; sourceTree = "<group>"; };
+		189ECCA4282E55A400A7F009 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		189ECCA6282E58EF00A7F009 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = DEVELOPER_DIR; };
+		189ECCA8282E593E00A7F009 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/iOSSupport/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		189ECCAA282E596C00A7F009 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		189ECCAD282E642000A7F009 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/CoreImage.framework; sourceTree = DEVELOPER_DIR; };
+		189ECCB62831F12200A7F009 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
+		18BBF9A32850765000E26D71 /* FOSAgoraDemoHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FOSAgoraDemoHeader.h; sourceTree = "<group>"; };
+		18E8F75D282CDCC3007B8887 /* FOSAgoraDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FOSAgoraDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18E8F760282CDCC3007B8887 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18E8F761282CDCC3007B8887 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18E8F766282CDCC3007B8887 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		18E8F767282CDCC3007B8887 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		18E8F76A282CDCC3007B8887 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18E8F76C282CDCC5007B8887 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18E8F76F282CDCC5007B8887 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18E8F771282CDCC5007B8887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E8F772282CDCC5007B8887 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18ECDD2428461AF600D3D00A /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+		1AB2A6156C46127E5CD60A98 /* Pods-FOSAgora.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FOSAgora.debug.xcconfig"; path = "Target Support Files/Pods-FOSAgora/Pods-FOSAgora.debug.xcconfig"; sourceTree = "<group>"; };
+		1BA0C4D78A9F8FEA917BF73D /* Pods-FOSAgoraDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FOSAgoraDemo.release.xcconfig"; path = "Target Support Files/Pods-FOSAgoraDemo/Pods-FOSAgoraDemo.release.xcconfig"; sourceTree = "<group>"; };
+		522F75AB69CECF7B84C25061 /* Pods_FOSAgoraDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FOSAgoraDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53764DEF6CD457D9D0A93031 /* Pods-FOSAgora.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FOSAgora.release.xcconfig"; path = "Target Support Files/Pods-FOSAgora/Pods-FOSAgora.release.xcconfig"; sourceTree = "<group>"; };
+		827097E2AF27FDB03070A91A /* Pods-FOSAgoraDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FOSAgoraDemo.debug.xcconfig"; path = "Target Support Files/Pods-FOSAgoraDemo/Pods-FOSAgoraDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		F87A6A0DD7B75A79868C6D97 /* Pods_FOSAgora.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FOSAgora.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18E8F75A282CDCC3007B8887 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				181FC987286952BC00DE82F3 /* FOSAgora.framework in Frameworks */,
+				80348EBD1D4BEB9B7328EE6A /* Pods_FOSAgoraDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12AB1AADA185538EE11DE6A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1806814928694397005807F5 /* CoreVideo.framework */,
+				180681472869438F005807F5 /* CoreMotion.framework */,
+				1806814528694385005807F5 /* CoreImage.framework */,
+				180681432869437B005807F5 /* CoreGraphics.framework */,
+				18ECDD2428461AF600D3D00A /* CoreMotion.framework */,
+				189ECCB62831F12200A7F009 /* libc++.tbd */,
+				189ECCAD282E642000A7F009 /* CoreImage.framework */,
+				189ECCAA282E596C00A7F009 /* CoreGraphics.framework */,
+				189ECCA8282E593E00A7F009 /* UIKit.framework */,
+				189ECCA6282E58EF00A7F009 /* CoreVideo.framework */,
+				189ECCA4282E55A400A7F009 /* AVFoundation.framework */,
+				F87A6A0DD7B75A79868C6D97 /* Pods_FOSAgora.framework */,
+				522F75AB69CECF7B84C25061 /* Pods_FOSAgoraDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1825D40F283F2176002B3097 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				1825D410283F2176002B3097 /* FDFullscreenPopGesture */,
+				1825D413283F2176002B3097 /* Masonry */,
+				1825D430283F2176002B3097 /* Reachability */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		1825D410283F2176002B3097 /* FDFullscreenPopGesture */ = {
+			isa = PBXGroup;
+			children = (
+				1825D411283F2176002B3097 /* UINavigationController+FDFullscreenPopGesture.h */,
+				1825D412283F2176002B3097 /* UINavigationController+FDFullscreenPopGesture.m */,
+			);
+			path = FDFullscreenPopGesture;
+			sourceTree = "<group>";
+		};
+		1825D413283F2176002B3097 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				1825D414283F2176002B3097 /* LICENSE */,
+				1825D415283F2176002B3097 /* Masonry */,
+				1825D42F283F2176002B3097 /* README.md */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		1825D415283F2176002B3097 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				1825D416283F2176002B3097 /* MASCompositeConstraint.h */,
+				1825D417283F2176002B3097 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				1825D418283F2176002B3097 /* MASConstraint+Private.h */,
+				1825D419283F2176002B3097 /* MASLayoutConstraint.h */,
+				1825D41A283F2176002B3097 /* NSArray+MASShorthandAdditions.h */,
+				1825D41B283F2176002B3097 /* MASConstraintMaker.h */,
+				1825D41C283F2176002B3097 /* View+MASAdditions.h */,
+				1825D41D283F2176002B3097 /* NSArray+MASAdditions.h */,
+				1825D41E283F2176002B3097 /* MASUtilities.h */,
+				1825D41F283F2176002B3097 /* MASViewAttribute.h */,
+				1825D420283F2176002B3097 /* ViewController+MASAdditions.m */,
+				1825D421283F2176002B3097 /* MASViewConstraint.h */,
+				1825D422283F2176002B3097 /* MASConstraint.h */,
+				1825D423283F2176002B3097 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				1825D424283F2176002B3097 /* MASCompositeConstraint.m */,
+				1825D425283F2176002B3097 /* MASConstraintMaker.m */,
+				1825D426283F2176002B3097 /* MASLayoutConstraint.m */,
+				1825D427283F2176002B3097 /* NSArray+MASAdditions.m */,
+				1825D428283F2176002B3097 /* View+MASAdditions.m */,
+				1825D429283F2176002B3097 /* View+MASShorthandAdditions.h */,
+				1825D42A283F2176002B3097 /* Masonry.h */,
+				1825D42B283F2176002B3097 /* MASConstraint.m */,
+				1825D42C283F2176002B3097 /* ViewController+MASAdditions.h */,
+				1825D42D283F2176002B3097 /* MASViewConstraint.m */,
+				1825D42E283F2176002B3097 /* MASViewAttribute.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		1825D430283F2176002B3097 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				1825D431283F2176002B3097 /* Reachability.m */,
+				1825D432283F2176002B3097 /* Reachability.h */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		18E8F754282CDCC3007B8887 = {
+			isa = PBXGroup;
+			children = (
+				18E8F75F282CDCC3007B8887 /* FOSAgoraDemo */,
+				18E8F75E282CDCC3007B8887 /* Products */,
+				68B5B30B16919EEB56EE3EB3 /* Pods */,
+				12AB1AADA185538EE11DE6A9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		18E8F75E282CDCC3007B8887 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18E8F75D282CDCC3007B8887 /* FOSAgoraDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18E8F75F282CDCC3007B8887 /* FOSAgoraDemo */ = {
+			isa = PBXGroup;
+			children = (
+				181FC9852869529900DE82F3 /* FOSAgora.framework */,
+				1825D40F283F2176002B3097 /* Libs */,
+				18E8F760282CDCC3007B8887 /* AppDelegate.h */,
+				18E8F761282CDCC3007B8887 /* AppDelegate.m */,
+				18E8F766282CDCC3007B8887 /* ViewController.h */,
+				18E8F767282CDCC3007B8887 /* ViewController.m */,
+				1825D441283F21D3002B3097 /* FOSHomeViewController.h */,
+				1825D444283F21D3002B3097 /* FOSHomeViewController.m */,
+				1825D442283F21D3002B3097 /* FOSBaseViewController.h */,
+				1825D445283F21D4002B3097 /* FOSBaseViewController.m */,
+				1825D443283F21D3002B3097 /* FOSDetectViewController.h */,
+				1825D446283F21D4002B3097 /* FOSDetectViewController.m */,
+				18BBF9A32850765000E26D71 /* FOSAgoraDemoHeader.h */,
+				18E8F769282CDCC3007B8887 /* Main.storyboard */,
+				18E8F76C282CDCC5007B8887 /* Assets.xcassets */,
+				18E8F76E282CDCC5007B8887 /* LaunchScreen.storyboard */,
+				18E8F771282CDCC5007B8887 /* Info.plist */,
+				18E8F772282CDCC5007B8887 /* main.m */,
+			);
+			path = FOSAgoraDemo;
+			sourceTree = "<group>";
+		};
+		68B5B30B16919EEB56EE3EB3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1AB2A6156C46127E5CD60A98 /* Pods-FOSAgora.debug.xcconfig */,
+				53764DEF6CD457D9D0A93031 /* Pods-FOSAgora.release.xcconfig */,
+				827097E2AF27FDB03070A91A /* Pods-FOSAgoraDemo.debug.xcconfig */,
+				1BA0C4D78A9F8FEA917BF73D /* Pods-FOSAgoraDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18E8F75C282CDCC3007B8887 /* FOSAgoraDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18E8F776282CDCC5007B8887 /* Build configuration list for PBXNativeTarget "FOSAgoraDemo" */;
+			buildPhases = (
+				9A379A939CA44C66F2A6D6B7 /* [CP] Check Pods Manifest.lock */,
+				18E8F759282CDCC3007B8887 /* Sources */,
+				18E8F75A282CDCC3007B8887 /* Frameworks */,
+				18E8F75B282CDCC3007B8887 /* Resources */,
+				18E8F789282CDCF5007B8887 /* Embed Frameworks */,
+				5C9CEB92D25CD4F0F699EE03 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FOSAgoraDemo;
+			productName = FOSAgoraDemo;
+			productReference = 18E8F75D282CDCC3007B8887 /* FOSAgoraDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18E8F755282CDCC3007B8887 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				CLASSPREFIX = FOS;
+				LastUpgradeCheck = 1330;
+				ORGANIZATIONNAME = Fosafer;
+				TargetAttributes = {
+					18E8F75C282CDCC3007B8887 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 18E8F758282CDCC3007B8887 /* Build configuration list for PBXProject "FOSAgoraDemo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18E8F754282CDCC3007B8887;
+			productRefGroup = 18E8F75E282CDCC3007B8887 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18E8F75C282CDCC3007B8887 /* FOSAgoraDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18E8F75B282CDCC3007B8887 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E8F770282CDCC5007B8887 /* LaunchScreen.storyboard in Resources */,
+				18E8F76D282CDCC5007B8887 /* Assets.xcassets in Resources */,
+				1825D43F283F2176002B3097 /* README.md in Resources */,
+				1825D434283F2176002B3097 /* LICENSE in Resources */,
+				18E8F76B282CDCC3007B8887 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5C9CEB92D25CD4F0F699EE03 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FOSAgoraDemo/Pods-FOSAgoraDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FOSAgoraDemo/Pods-FOSAgoraDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FOSAgoraDemo/Pods-FOSAgoraDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A379A939CA44C66F2A6D6B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FOSAgoraDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18E8F759282CDCC3007B8887 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1825D433283F2176002B3097 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
+				1825D447283F21D4002B3097 /* FOSHomeViewController.m in Sources */,
+				1825D448283F21D4002B3097 /* FOSBaseViewController.m in Sources */,
+				18E8F768282CDCC3007B8887 /* ViewController.m in Sources */,
+				1825D439283F2176002B3097 /* MASLayoutConstraint.m in Sources */,
+				18E8F762282CDCC3007B8887 /* AppDelegate.m in Sources */,
+				18E8F773282CDCC5007B8887 /* main.m in Sources */,
+				1825D43E283F2176002B3097 /* MASViewAttribute.m in Sources */,
+				1825D43A283F2176002B3097 /* NSArray+MASAdditions.m in Sources */,
+				1825D437283F2176002B3097 /* MASCompositeConstraint.m in Sources */,
+				1825D438283F2176002B3097 /* MASConstraintMaker.m in Sources */,
+				1825D43B283F2176002B3097 /* View+MASAdditions.m in Sources */,
+				1825D440283F2176002B3097 /* Reachability.m in Sources */,
+				1825D436283F2176002B3097 /* ViewController+MASAdditions.m in Sources */,
+				1825D449283F21D4002B3097 /* FOSDetectViewController.m in Sources */,
+				1825D43D283F2176002B3097 /* MASViewConstraint.m in Sources */,
+				1825D435283F2176002B3097 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				1825D43C283F2176002B3097 /* MASConstraint.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		18E8F769282CDCC3007B8887 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18E8F76A282CDCC3007B8887 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18E8F76E282CDCC5007B8887 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18E8F76F282CDCC5007B8887 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18E8F774282CDCC5007B8887 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		18E8F775282CDCC5007B8887 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18E8F777282CDCC5007B8887 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 827097E2AF27FDB03070A91A /* Pods-FOSAgoraDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CVT5K5W5HB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/FOSAgoraDemo",
+				);
+				GCC_PREFIX_HEADER = FOSAgoraDemo/FOSAgoraDemoHeader.h;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FOSAgoraDemo/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "使用摄像头";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "保存图片";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fosafer.FOSAgoraDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = wildcard;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18E8F778282CDCC5007B8887 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BA0C4D78A9F8FEA917BF73D /* Pods-FOSAgoraDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CVT5K5W5HB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/FOSAgoraDemo",
+				);
+				GCC_PREFIX_HEADER = FOSAgoraDemo/FOSAgoraDemoHeader.h;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FOSAgoraDemo/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "使用摄像头";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "保存图片";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fosafer.FOSAgoraDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = wildcard;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18E8F758282CDCC3007B8887 /* Build configuration list for PBXProject "FOSAgoraDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E8F774282CDCC5007B8887 /* Debug */,
+				18E8F775282CDCC5007B8887 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18E8F776282CDCC5007B8887 /* Build configuration list for PBXNativeTarget "FOSAgoraDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E8F777282CDCC5007B8887 /* Debug */,
+				18E8F778282CDCC5007B8887 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18E8F755282CDCC3007B8887 /* Project object */;
+}
