@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/act_main_tv_result"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/tv_tips"/>
+
+    <ImageView
+        android:id="@+id/act_main_iv_head"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/act_main_tv_result"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_person"/>
+
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:layout_above="@id/act_main_iv_head"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/tv_tips"
+        android:textSize="20dp"/>
+
+
+    <TextView
+        android:id="@+id/act_main_tv_version"
+        android:layout_margin="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fmt_app_version"/>
+
+
+    <Button
+        android:layout_margin="20dp"
+        android:id="@+id/act_main_btn_enter"
+        android:layout_below="@id/act_main_tv_result"
+        android:padding="@dimen/dp10"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter"
+        android:textSize="@dimen/dp14"/>
+</RelativeLayout>
