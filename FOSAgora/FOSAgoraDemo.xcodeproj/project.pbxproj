@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		181FC987286952BC00DE82F3 /* FOSAgora.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 181FC9852869529900DE82F3 /* FOSAgora.framework */; };
-		181FC988286952BC00DE82F3 /* FOSAgora.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 181FC9852869529900DE82F3 /* FOSAgora.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1825D433283F2176002B3097 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 1825D412283F2176002B3097 /* UINavigationController+FDFullscreenPopGesture.m */; };
 		1825D434283F2176002B3097 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 1825D414283F2176002B3097 /* LICENSE */; };
 		1825D435283F2176002B3097 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1825D417283F2176002B3097 /* NSLayoutConstraint+MASDebugAdditions.m */; };
@@ -26,6 +24,8 @@
 		1825D447283F21D4002B3097 /* FOSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1825D444283F21D3002B3097 /* FOSHomeViewController.m */; };
 		1825D448283F21D4002B3097 /* FOSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1825D445283F21D4002B3097 /* FOSBaseViewController.m */; };
 		1825D449283F21D4002B3097 /* FOSDetectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1825D446283F21D4002B3097 /* FOSDetectViewController.m */; };
+		18749BDF28B35F7900985413 /* FOSAgora.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18749BDD28B35F6F00985413 /* FOSAgora.framework */; };
+		18749BE028B35F7900985413 /* FOSAgora.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18749BDD28B35F6F00985413 /* FOSAgora.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		18E8F762282CDCC3007B8887 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E8F761282CDCC3007B8887 /* AppDelegate.m */; };
 		18E8F768282CDCC3007B8887 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E8F767282CDCC3007B8887 /* ViewController.m */; };
 		18E8F76B282CDCC3007B8887 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E8F769282CDCC3007B8887 /* Main.storyboard */; };
@@ -42,7 +42,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				181FC988286952BC00DE82F3 /* FOSAgora.framework in Embed Frameworks */,
+				18749BE028B35F7900985413 /* FOSAgora.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,11 +50,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		180681432869437B005807F5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		1806814528694385005807F5 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
-		180681472869438F005807F5 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
-		1806814928694397005807F5 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
-		181FC9852869529900DE82F3 /* FOSAgora.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FOSAgora.framework; sourceTree = "<group>"; };
 		1825D411283F2176002B3097 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		1825D412283F2176002B3097 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		1825D414283F2176002B3097 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -92,6 +87,7 @@
 		1825D444283F21D3002B3097 /* FOSHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOSHomeViewController.m; sourceTree = "<group>"; };
 		1825D445283F21D4002B3097 /* FOSBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOSBaseViewController.m; sourceTree = "<group>"; };
 		1825D446283F21D4002B3097 /* FOSDetectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOSDetectViewController.m; sourceTree = "<group>"; };
+		18749BDD28B35F6F00985413 /* FOSAgora.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FOSAgora.framework; sourceTree = "<group>"; };
 		189ECCA4282E55A400A7F009 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		189ECCA6282E58EF00A7F009 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = DEVELOPER_DIR; };
 		189ECCA8282E593E00A7F009 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/iOSSupport/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -123,7 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				181FC987286952BC00DE82F3 /* FOSAgora.framework in Frameworks */,
+				18749BDF28B35F7900985413 /* FOSAgora.framework in Frameworks */,
 				80348EBD1D4BEB9B7328EE6A /* Pods_FOSAgoraDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,10 +130,6 @@
 		12AB1AADA185538EE11DE6A9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1806814928694397005807F5 /* CoreVideo.framework */,
-				180681472869438F005807F5 /* CoreMotion.framework */,
-				1806814528694385005807F5 /* CoreImage.framework */,
-				180681432869437B005807F5 /* CoreGraphics.framework */,
 				18ECDD2428461AF600D3D00A /* CoreMotion.framework */,
 				189ECCB62831F12200A7F009 /* libc++.tbd */,
 				189ECCAD282E642000A7F009 /* CoreImage.framework */,
@@ -242,7 +234,7 @@
 		18E8F75F282CDCC3007B8887 /* FOSAgoraDemo */ = {
 			isa = PBXGroup;
 			children = (
-				181FC9852869529900DE82F3 /* FOSAgora.framework */,
+				18749BDD28B35F6F00985413 /* FOSAgora.framework */,
 				1825D40F283F2176002B3097 /* Libs */,
 				18E8F760282CDCC3007B8887 /* AppDelegate.h */,
 				18E8F761282CDCC3007B8887 /* AppDelegate.m */,
@@ -559,7 +551,6 @@
 				DEVELOPMENT_TEAM = CVT5K5W5HB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/FOSAgoraDemo",
 				);
 				GCC_PREFIX_HEADER = FOSAgoraDemo/FOSAgoraDemoHeader.h;
@@ -576,7 +567,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fosafer.FOSAgoraDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = wildcard;
@@ -591,13 +582,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CVT5K5W5HB;
+				DEVELOPMENT_TEAM = L6A5VFP4PR;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/FOSAgoraDemo",
 				);
 				GCC_PREFIX_HEADER = FOSAgoraDemo/FOSAgoraDemoHeader.h;
@@ -614,10 +604,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fosafer.FOSAgoraDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = wildcard;
+				PROVISIONING_PROFILE_SPECIFIER = wildcard_dis;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

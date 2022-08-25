@@ -59,15 +59,17 @@
     [self.agoraKit setupLocalVideo:canvas];
     [self.agoraKit startPreview];
     
-    // 设置appKey和appSecret
+    // 设置appKey、appSecret、requestId(requestId:用于追踪请求的标识,长度小于50)
+    NSString *requestId = [[NSUUID UUID] UUIDString];
     NSDictionary *propertyDic = @{@"appKey" : App_Key,
-                                  @"appSecret" : App_Secret
+                                  @"appSecret" : App_Secret,
+                                  @"requestId" : requestId
                                 };
     NSData *propertyData = [NSJSONSerialization dataWithJSONObject:propertyDic options:0 error:0];
     NSString *propertyStr = [[NSString alloc] initWithData:propertyData encoding:NSUTF8StringEncoding];
     [self.agoraKit setExtensionPropertyWithVendor:@"fosafer"
                                         extension:@"alive"
-                                              key:@"set_appKey_appSecret"
+                                              key:@"set_property"
                                             value:propertyStr];
 }
 
@@ -81,14 +83,16 @@
 // 继续
 - (void)retry {
     [self setTips:@"请在检测框中露出人脸"];
-    // 重置超时时间
-    NSDictionary *propertyDic = @{@"retry" : @1
+    // 重置超时时间、requestId
+    NSString *requestId = [[NSUUID UUID] UUIDString];
+    NSDictionary *propertyDic = @{@"retry" : @1,
+                                  @"requestId" : requestId
                                 };
     NSData *propertyData = [NSJSONSerialization dataWithJSONObject:propertyDic options:0 error:0];
     NSString *propertyStr = [[NSString alloc] initWithData:propertyData encoding:NSUTF8StringEncoding];
     [self.agoraKit setExtensionPropertyWithVendor:@"fosafer"
                                         extension:@"alive"
-                                              key:@"retry"
+                                              key:@"set_property"
                                             value:propertyStr];
     
     [self.agoraKit enableLocalVideo:YES];
@@ -145,13 +149,19 @@
                 [self alertTitle:@"提示" message:@"引擎库返回人脸图片为空,请重试" type:1];
                 break;
             case 1004:
-                [self alertTitle:@"提示" message:@"setProperty方法参数格式错误" type:1];
+                [self alertTitle:@"提示" message:@"setExtensionPropertyWithVendor方法参数格式错误" type:1];
                 break;
             case 1005:
                 [self alertTitle:@"提示" message:@"appKey不能为空" type:1];
                 break;
             case 1006:
                 [self alertTitle:@"提示" message:@"appSecret不能为空" type:1];
+                break;
+            case 1007:
+                [self alertTitle:@"提示" message:message type:1];
+                break;
+            case 1008:
+                [self alertTitle:@"提示" message:message type:1];
                 break;
             case 2000:
                 [self setTips:@"正在处理"];
