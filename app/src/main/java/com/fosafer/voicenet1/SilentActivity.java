@@ -189,7 +189,7 @@ public class SilentActivity extends AppCompatActivity {
     private void enableExtension(boolean enabled) {
         Log.d(TAG, "enableExtension");
         fosaferManager = new FosaferManager();
-        fosaferManager.init(this, mRtcEngine, com.fosafer.voicenet1.Constants.mAppkey, com.fosafer.voicenet1.Constants.mAppsecret);
+        fosaferManager.init(this, mRtcEngine, com.fosafer.voicenet1.Constants.mAppkey, com.fosafer.voicenet1.Constants.mAppsecret, UUID.randomUUID().toString());
         mRtcEngine.enableExtension("fosafer", "alive", enabled);
     }
 
